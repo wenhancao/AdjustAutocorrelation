@@ -22,7 +22,7 @@ def all_args():
     parser.add_argument('--bad_limit', type=int, default=0, help='# of non-improving epochs before early-stopping')
     parser.add_argument('--n_series', type=int, help='# of series in the data (assign automatically)')
     parser.add_argument('--series_len', type=int, default=64, help='window size of a single example')
-    parser.add_argument('--output_dir', type=str, required=True)
+    parser.add_argument('--output_dir', type=str, default="output")
     parser.add_argument('--inp_adj', action='store_true', help='adjust for input')
     parser.add_argument('--out_adj', action='store_true', help='adjust for output')
     parser.add_argument('--norm_type', type=str, default='none', choices=['none', 'minmax', 'standard'])
@@ -33,12 +33,22 @@ def all_args():
     parser.add_argument('--test_ratio', type=float, default=0.2, help='ratio of data for testing')
 
     subparsers = parser.add_subparsers(dest='task_type', help='task_type')
+    subparsers.required = False
+    subparsers.default = 'forecasting'
 
     for name, task_arg in task_args.__dict__.items():
         if callable(task_arg):
             task_arg(subparsers)
 
     args = parser.parse_args()
+
+    # 获取子解析器对象
+    subparser = subparsers.choices[args.task_type]
+    # 获取默认参数并添加到 args 对象中
+    default_args = vars(subparser.parse_args([]))
+    for key, value in default_args.items():
+        setattr(args, key, value)
+
     args.data_dir = os.path.join(args.data_dir, args.task_type)
     args.output_dir = os.path.join(args.output_dir, args.task_type)
 

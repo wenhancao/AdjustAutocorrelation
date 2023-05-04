@@ -1,0 +1,55 @@
+Namespace(agcrn_embed_dim=10, agcrn_hidden_size=64, agcrn_n_layers=1, bad_limit=0, batch_size=128, data_dir='data/forecasting', dataset='solar', device='cuda', dsanet_d_inner=2048, dsanet_d_k=64, dsanet_d_model=512, dsanet_d_v=64, dsanet_dropout=0.1, dsanet_local=3, dsanet_n_head=8, dsanet_n_kernels=32, dsanet_n_layers=1, dsanet_w_kernel=1, fix_rho=False, horizon=1, init_rho=0.0, inp_adj=False, lmbd=0.0, local_norm=False, lr=0.0001, lstm_hidden_size=64, lstm_n_layers=2, model_decay_rate=1, model_type='LSTM', n_epochs=50, n_series=None, norm_type='none', one_rho=False, out_adj=False, output_dir='output/forecasting', rho_decay_rate=1, rho_lr=0.01, series_len=64, task_type='forecasting', tcn_dropout=0, tcn_hidden_size=64, tcn_n_layers=9, test_ratio=0.2, tpa_ar_len=24, tpa_hidden_size=64, tpa_n_layers=1, trans_hidden_size=256, trans_kernel_size=6, trans_n_head=8, trans_n_layers=3, valid_ratio=0.2)
+total num of parameters: 94153
+Length of dataset: 31472
+Length of dataset: 10448
+Length of dataset: 10448
+epoch = 1 , trn loss = 146.114349 , trn err = 1.144555 , rho = 0.000000 , val loss = 114.846411 , val err = 1.079060 , tst loss = 84.599653 , tst err = 1.028818
+epoch = 2 , trn loss = 120.296078 , trn err = 1.038523 , rho = 0.000000 , val loss = 96.024681 , val err = 0.986684 , tst loss = 70.768216 , tst err = 0.940965
+epoch = 3 , trn loss = 103.164839 , trn err = 0.961737 , rho = 0.000000 , val loss = 82.181631 , val err = 0.912797 , tst loss = 60.705487 , tst err = 0.871502
+epoch = 4 , trn loss = 89.837295 , trn err = 0.897467 , rho = 0.000000 , val loss = 71.082242 , val err = 0.848921 , tst loss = 52.696980 , tst err = 0.811983
+epoch = 5 , trn loss = 78.892153 , trn err = 0.841022 , rho = 0.000000 , val loss = 62.019369 , val err = 0.792959 , tst loss = 46.175167 , tst err = 0.760079
+epoch = 6 , trn loss = 69.710252 , trn err = 0.790567 , rho = 0.000000 , val loss = 54.440547 , val err = 0.742930 , tst loss = 40.734174 , tst err = 0.713894
+epoch = 7 , trn loss = 61.944328 , trn err = 0.745231 , rho = 0.000000 , val loss = 48.098348 , val err = 0.698316 , tst loss = 36.175625 , tst err = 0.672763
+epoch = 8 , trn loss = 55.326992 , trn err = 0.704302 , rho = 0.000000 , val loss = 42.747837 , val err = 0.658330 , tst loss = 32.330160 , tst err = 0.636002
+epoch = 9 , trn loss = 49.656333 , trn err = 0.667233 , rho = 0.000000 , val loss = 38.205024 , val err = 0.622368 , tst loss = 29.066471 , tst err = 0.603046
+epoch = 10 , trn loss = 44.773975 , trn err = 0.633583 , rho = 0.000000 , val loss = 34.404036 , val err = 0.590597 , tst loss = 26.350957 , tst err = 0.574186
+epoch = 11 , trn loss = 40.554767 , trn err = 0.602992 , rho = 0.000000 , val loss = 31.118745 , val err = 0.561691 , tst loss = 23.970296 , tst err = 0.547635
+epoch = 12 , trn loss = 36.896240 , trn err = 0.575150 , rho = 0.000000 , val loss = 28.360718 , val err = 0.536223 , tst loss = 21.908672 , tst err = 0.523555
+epoch = 13 , trn loss = 33.719439 , trn err = 0.549833 , rho = 0.000000 , val loss = 25.986526 , val err = 0.513288 , tst loss = 20.204489 , tst err = 0.502780
+epoch = 14 , trn loss = 30.948821 , trn err = 0.526760 , rho = 0.000000 , val loss = 23.940237 , val err = 0.492664 , tst loss = 18.665648 , tst err = 0.483254
+epoch = 15 , trn loss = 28.515999 , trn err = 0.505632 , rho = 0.000000 , val loss = 22.203816 , val err = 0.474461 , tst loss = 17.340768 , tst err = 0.465788
+epoch = 16 , trn loss = 26.378209 , trn err = 0.486310 , rho = 0.000000 , val loss = 20.638453 , val err = 0.457431 , tst loss = 16.213461 , tst err = 0.450393
+epoch = 17 , trn loss = 24.493327 , trn err = 0.468613 , rho = 0.000000 , val loss = 19.325870 , val err = 0.442646 , tst loss = 15.247061 , tst err = 0.436764
+epoch = 18 , trn loss = 22.819915 , trn err = 0.452322 , rho = 0.000000 , val loss = 18.117300 , val err = 0.428582 , tst loss = 14.267505 , tst err = 0.422502
+epoch = 19 , trn loss = 21.326850 , trn err = 0.437274 , rho = 0.000000 , val loss = 17.116079 , val err = 0.416571 , tst loss = 13.456097 , tst err = 0.410312
+epoch = 20 , trn loss = 19.996073 , trn err = 0.423412 , rho = 0.000000 , val loss = 16.221821 , val err = 0.405543 , tst loss = 12.726228 , tst err = 0.399029
+epoch = 21 , trn loss = 18.802135 , trn err = 0.410576 , rho = 0.000000 , val loss = 15.368350 , val err = 0.394730 , tst loss = 12.080790 , tst err = 0.388778
+epoch = 22 , trn loss = 17.718841 , trn err = 0.398573 , rho = 0.000000 , val loss = 14.637122 , val err = 0.385225 , tst loss = 11.505542 , tst err = 0.379409
+epoch = 23 , trn loss = 16.751899 , trn err = 0.387545 , rho = 0.000000 , val loss = 14.009103 , val err = 0.376870 , tst loss = 11.027296 , tst err = 0.371440
+epoch = 24 , trn loss = 15.872399 , trn err = 0.377235 , rho = 0.000000 , val loss = 13.392471 , val err = 0.368483 , tst loss = 10.506878 , tst err = 0.362569
+epoch = 25 , trn loss = 15.078745 , trn err = 0.367683 , rho = 0.000000 , val loss = 12.851675 , val err = 0.360966 , tst loss = 10.057330 , tst err = 0.354728
+epoch = 26 , trn loss = 14.360400 , trn err = 0.358818 , rho = 0.000000 , val loss = 12.405744 , val err = 0.354649 , tst loss = 9.669036 , tst err = 0.347813
+epoch = 27 , trn loss = 13.709386 , trn err = 0.350590 , rho = 0.000000 , val loss = 11.966640 , val err = 0.348316 , tst loss = 9.342539 , tst err = 0.341890
+epoch = 28 , trn loss = 13.125981 , trn err = 0.343049 , rho = 0.000000 , val loss = 11.582406 , val err = 0.342678 , tst loss = 8.949800 , tst err = 0.334627
+epoch = 29 , trn loss = 12.563807 , trn err = 0.335622 , rho = 0.000000 , val loss = 11.264315 , val err = 0.337940 , tst loss = 8.702192 , tst err = 0.329966
+epoch = 30 , trn loss = 12.063636 , trn err = 0.328874 , rho = 0.000000 , val loss = 10.875967 , val err = 0.332063 , tst loss = 8.403928 , tst err = 0.324262
+epoch = 31 , trn loss = 11.596263 , trn err = 0.322440 , rho = 0.000000 , val loss = 10.593019 , val err = 0.327715 , tst loss = 8.179715 , tst err = 0.319907
+epoch = 32 , trn loss = 11.157573 , trn err = 0.316283 , rho = 0.000000 , val loss = 10.400839 , val err = 0.324729 , tst loss = 7.962352 , tst err = 0.315628
+epoch = 33 , trn loss = 10.761699 , trn err = 0.310621 , rho = 0.000000 , val loss = 10.094446 , val err = 0.319910 , tst loss = 7.684116 , tst err = 0.310064
+epoch = 34 , trn loss = 10.389729 , trn err = 0.305206 , rho = 0.000000 , val loss = 9.854900 , val err = 0.316092 , tst loss = 7.535170 , tst err = 0.307044
+epoch = 35 , trn loss = 10.043526 , trn err = 0.300078 , rho = 0.000000 , val loss = 9.660900 , val err = 0.312965 , tst loss = 7.376344 , tst err = 0.303791
+epoch = 36 , trn loss = 9.727912 , trn err = 0.295325 , rho = 0.000000 , val loss = 9.428100 , val err = 0.309171 , tst loss = 7.189619 , tst err = 0.299921
+epoch = 37 , trn loss = 9.434322 , trn err = 0.290834 , rho = 0.000000 , val loss = 9.235210 , val err = 0.305992 , tst loss = 7.057285 , tst err = 0.297148
+epoch = 38 , trn loss = 9.169330 , trn err = 0.286721 , rho = 0.000000 , val loss = 9.106755 , val err = 0.303857 , tst loss = 6.976872 , tst err = 0.295450
+epoch = 39 , trn loss = 8.918613 , trn err = 0.282774 , rho = 0.000000 , val loss = 8.906234 , val err = 0.300493 , tst loss = 6.821013 , tst err = 0.292132
+epoch = 40 , trn loss = 8.678824 , trn err = 0.278946 , rho = 0.000000 , val loss = 8.755902 , val err = 0.297946 , tst loss = 6.669953 , tst err = 0.288879
+epoch = 41 , trn loss = 8.467691 , trn err = 0.275533 , rho = 0.000000 , val loss = 8.675489 , val err = 0.296574 , tst loss = 6.619468 , tst err = 0.287783
+epoch = 42 , trn loss = 8.267818 , trn err = 0.272261 , rho = 0.000000 , val loss = 8.578347 , val err = 0.294909 , tst loss = 6.511811 , tst err = 0.285434
+epoch = 43 , trn loss = 8.077929 , trn err = 0.269117 , rho = 0.000000 , val loss = 8.381425 , val err = 0.291505 , tst loss = 6.365547 , tst err = 0.282210
+epoch = 44 , trn loss = 7.912567 , trn err = 0.266348 , rho = 0.000000 , val loss = 8.324136 , val err = 0.290507 , tst loss = 6.339988 , tst err = 0.281643
+epoch = 45 , trn loss = 7.754825 , trn err = 0.263680 , rho = 0.000000 , val loss = 8.197975 , val err = 0.288297 , tst loss = 6.214437 , tst err = 0.278840
+epoch = 46 , trn loss = 7.602736 , trn err = 0.261081 , rho = 0.000000 , val loss = 8.296001 , val err = 0.290015 , tst loss = 6.192838 , tst err = 0.278355
+epoch = 47 , trn loss = 7.471292 , trn err = 0.258814 , rho = 0.000000 , val loss = 8.061556 , val err = 0.285888 , tst loss = 6.062794 , tst err = 0.275417
+epoch = 48 , trn loss = 7.339945 , trn err = 0.256529 , rho = 0.000000 , val loss = 8.083248 , val err = 0.286273 , tst loss = 6.055285 , tst err = 0.275246
+epoch = 49 , trn loss = 7.220864 , trn err = 0.254440 , rho = 0.000000 , val loss = 7.921567 , val err = 0.283395 , tst loss = 5.950982 , tst err = 0.272865
+epoch = 50 , trn loss = 7.108161 , trn err = 0.252446 , rho = 0.000000 , val loss = 7.874326 , val err = 0.282549 , tst loss = 5.929147 , tst err = 0.272364

@@ -93,6 +93,7 @@ class forecastingRunner(Runner):
                 loss = self.criterion(y, prd_y)
                 epoch_loss += loss.item() * bs
 
+                sc = sc.float()
                 epoch_err += torch.sum((y*sc - prd_y*sc)**2).item()
 
                 if mode == 0:
